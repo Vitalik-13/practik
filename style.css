@@ -72,8 +72,8 @@ a{
 @media(max-width:416px){
     .menu-nav{
         display: flex;
-        flex-direction: column;
-        gap: 5px;
+        gap: 20px;
+        padding-right: 5px;
     }
     .header-content{
         display: flex;
