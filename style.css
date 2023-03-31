@@ -180,8 +180,8 @@ a{
 .contetnt-towers{
     flex: 33.3333333%;
     text-align: -webkit-center;
-    padding-left: 51px;
-    padding-right: 51px;
+    padding-left: 67px;
+    padding-right: 67px;
 }
 
 .towers-title{
@@ -310,14 +310,35 @@ a{
     padding: 30px 5px 48px 5px;
     
 }
-.next-foto{
+.next-foto {
     padding-left: 8px;
     padding-bottom: 7px;
+    position: relative;
     transition: all 0.3s ease;
-}
-.next-foto:hover{
-transform: scale(1.1);
-}
+  }
+  
+  .next-foto:hover:not(.lorem) .fofof {
+    filter: brightness(30%);
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+  }
+  
+  .next-foto .lorem {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    top: 45%;
+    padding: 0 7px;
+    color: #fff;
+    pointer-events: none;
+  }
+  
+  .next-foto:hover .lorem {
+    opacity: 1;
+    filter: brightness(90%);
+    display: block;
+  }
+
 .next-foto:first-child{
     padding-left: 0;
 }
