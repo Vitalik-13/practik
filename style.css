@@ -325,7 +325,7 @@ a{
   
   .next-foto .lorem {
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.4s ease;
     position: absolute;
     top: 45%;
     padding: 0 7px;
@@ -552,4 +552,7 @@ display: none;
      padding-top:10px;
      padding-bottom: 16px;
      color: #fff;
+}
+.link-foto:hover{
+    transform: scale(1.5);
 }
