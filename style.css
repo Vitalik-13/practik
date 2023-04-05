@@ -111,32 +111,40 @@ a{
         display: flex;
         justify-content: space-between;
      }
+     .navigation{
+       
+        gap: 0;
+    }
      .navigation.active {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 40px;
+        top: 60px;
         left: 0;
-        right: 35%;
+        right: 0;
         background-color: green;
         z-index: 1;
         text-align: center;
-        height: 100vh;
+        height: 40vh;
         transition: height 0.5s ease;
     }
     .navigation.active li{
         width: 100%;
-        flex: 25%;
+        /* flex: 25%; */
         margin-top: 20px;
         margin-bottom: 20px;
         display: block;
+       
     }
     .navigation.active li:hover{
         width: 100%;
         background-color: #fff;
         color: #28A745;
     }
-    
+    .header-link{
+        padding-top: 0px;
+        display: block;
+    }
     .header-link:hover{
         text-decoration: none;
     }
