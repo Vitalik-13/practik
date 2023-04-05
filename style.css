@@ -28,7 +28,7 @@ a{
 /* /*------------------------------------------------------------------------------------/ */
 .header{
     min-height: 70px;
-    z-index: 1;
+    z-index: 3;
 }
 .logo{
     padding-top: 11px;
@@ -50,7 +50,7 @@ a{
     justify-content: space-between;
     align-items: center;
 }
-.menu-nav{
+.navigation{
     display: flex;
     gap: 38px;
 }
