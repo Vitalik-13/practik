@@ -104,10 +104,12 @@ a{
     .burger{
         display: block;
     }
+    
     .navigation{
         display: none;
     }
     .header-content{
+        padding-top: 10px;
         display: flex;
         justify-content: space-between;
      }
@@ -126,7 +128,7 @@ a{
         z-index: 1;
         text-align: center;
         height: 40vh;
-        transition: height 0.5s ease;
+        transition: top 0.5s ease;
     }
     .navigation.active li{
         width: 100%;
