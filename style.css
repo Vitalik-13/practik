@@ -28,7 +28,7 @@ a{
 /* /*------------------------------------------------------------------------------------/ */
 .header{
     min-height: 70px;
-    z-index: 50;
+    z-index: 1;
 }
 .logo{
     padding-top: 11px;
@@ -64,30 +64,20 @@ a{
     text-decoration: underline;
     color: #28A745;
 }
+.burger{
+    display: none;
+}
+.one{
+    width: 20px;
+  
+    margin-top: 5px;
+    border: 1px solid white;
+}
 /* @media(max-width:320px){
 
 } */
-@media(max-width:484px){
-    .contetnt-towers:nth-child(2){
-        padding-top: 35px;
-        padding-bottom: 35px;
-    }
-}
-@media(max-width:416px){
-    .menu-nav{
-        display: flex;
-        gap: 20px;
-        padding-right: 5px;
-    }
-    .header-content{
-        display: flex;
-        flex-direction: column;
-    }
-    .big-foto{
-        margin-top: -212px;
-        min-height: 110vh;
-    }
-}
+
+
 @media(max-width:743px){
     .header-content{
         display: flex;
@@ -106,6 +96,64 @@ a{
     }
    
 }
+@media(max-width:484px){
+    .contetnt-towers:nth-child(2){
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    .burger{
+        display: block;
+    }
+    .navigation{
+        display: none;
+    }
+    .header-content{
+        display: flex;
+        justify-content: space-between;
+     }
+     .navigation.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        right: 35%;
+        background-color: green;
+        z-index: 1;
+        text-align: center;
+        height: 100vh;
+        transition: height 0.5s ease;
+    }
+    .navigation.active li{
+        width: 100%;
+        flex: 25%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: block;
+    }
+    .navigation.active li:hover{
+        width: 100%;
+        background-color: #fff;
+        color: #28A745;
+    }
+    
+    .header-link:hover{
+        text-decoration: none;
+    }
+}
+@media(max-width:416px){
+    .menu-nav{
+        display: flex;
+        gap: 20px;
+        padding-right: 5px;
+    }
+    
+    .big-foto{
+        margin-top: -212px;
+        min-height: 110vh;
+    }
+}
+
 /* /*------------------------------------------------------------------------------------/ */
 .foto4ka{
     width: 100%;
