@@ -642,3 +642,11 @@ display: none;
    .arrow:hover{
     transform: scale(1.1);
    }
+
+   @media(max-width:400px){
+    .arrow{
+        width: 50px;
+        right: 20px;
+        bottom: 20px;
+    }
+   }
