@@ -8,6 +8,20 @@ $(document).ready(function () {
 
 let arrow =  document.querySelector (".arrow")
 let body = document.querySelector("body")
+const modal = document.querySelector(".reclama")
+const hide = document.querySelector(".absolute")
+
+
+window.addEventListener("scroll",()=>{
+    if(window.scrollY>1850){
+        modal.classList.add("show")
+    }
+})
+
+hide.addEventListener("click",function(){
+    modal.classList.add("hide")
+   
+})
 
 window.addEventListener('scroll',()=>{
     if(window.scrollY>10){
