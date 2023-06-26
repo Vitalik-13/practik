@@ -622,7 +622,7 @@ display: none;
     font-weight: 700;
 }
 .arrow{
-    background-color: rgb(181, 215, 93);
+    background-color: #28A745;
     width: 100px;
     border: 2px solid greenyellow;
     box-shadow: 2px 3px 2px 3px rgb(95, 89, 85);
@@ -633,7 +633,7 @@ display: none;
     position: fixed;
     right: 40px;
     bottom: 20px;
-    border-radius: 50%;
+    border-radius: 32%;
     transition: all 0.5s ease;
     display: none;
 
@@ -652,7 +652,6 @@ display: none;
    }
    .reclama{
     position: fixed;
-    display: flex;
     justify-content: center;
     align-items: center;
     bottom: 0px;
@@ -661,7 +660,7 @@ display: none;
     height: 100%;
     z-index: 50;
     background-color: rgba(0, 0, 0, 0.8);
-    /* display: none; */
+    display: none;
    }
    .relative{
     position: relative;

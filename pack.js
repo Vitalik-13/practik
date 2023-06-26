@@ -11,17 +11,30 @@ let body = document.querySelector("body")
 const modal = document.querySelector(".reclama")
 const hide = document.querySelector(".absolute")
 
+function closeModal(){ 
+    modal.style.display='none'
+}
 
-window.addEventListener("scroll",()=>{
-    if(window.scrollY>1850){
-        modal.classList.add("show")
-    }
-})
-
-hide.addEventListener("click",function(){
-    modal.classList.add("hide")
+hide.addEventListener("click", closeModal)
    
-})
+   
+function openModal(){
+    if(window.scrollY >document.body.scrollHeight / 2){
+        modal.style.display ="flex"
+        window.removeEventListener("scroll",openModal)
+    }
+}
+
+window.addEventListener("scroll",openModal )
+
+ 
+
+
+    
+  
+
+
+
 
 window.addEventListener('scroll',()=>{
     if(window.scrollY>10){
