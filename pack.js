@@ -11,6 +11,14 @@ let body = document.querySelector("body")
 const modal = document.querySelector(".reclama")
 const hide = document.querySelector(".absolute")
 
+
+body.addEventListener("click",(event)=>{
+  if(!event.target.closest('.relative')){
+    modal.style.display='none'
+}
+})
+  
+
 function closeModal(){ 
     modal.style.display='none'
 }
@@ -27,15 +35,6 @@ function openModal(){
 
 window.addEventListener("scroll",openModal )
 
- 
-
-
-    
-  
-
-
-
-
 window.addEventListener('scroll',()=>{
     if(window.scrollY>10){
         arrow.style.display="flex"
@@ -51,3 +50,12 @@ body.scrollIntoView({
     behavior:"smooth"
 })
 })
+ 
+
+
+    
+  
+
+
+
+
