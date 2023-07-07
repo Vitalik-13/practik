@@ -63,7 +63,8 @@ navLinks.forEach(link => {
 function scrollToSection(e) {
   e.preventDefault(); 
 
-  let targetId = this.getAttribute('href'); 
+  let targetId = this.getAttribute('href');
+  
   let targetSection = document.querySelector(targetId); 
  
 

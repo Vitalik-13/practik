@@ -543,6 +543,7 @@ display: none;
 }
 .link-foto{
     padding-left: 25px;
+    transition: all 0.3s ease;
 }
 .one-with-three-foto:hover .text-on-foto{
     display: block;
@@ -744,4 +745,8 @@ display: none;
 
 .hide{
     display: none;
+}
+
+.modaaa{
+    color: red;
 }
