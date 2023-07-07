@@ -51,9 +51,28 @@ body.scrollIntoView({
 })
 })
  
+let navLinks = document.querySelectorAll('.nav .header-link');
 
 
-    
+
+navLinks.forEach(link => {
+  link.addEventListener('click', scrollToSection);
+});
+
+
+function scrollToSection(e) {
+  e.preventDefault(); 
+
+  let targetId = this.getAttribute('href'); 
+  let targetSection = document.querySelector(targetId); 
+ 
+
+  targetSection.scrollIntoView({ 
+    behavior: 'smooth'
+  });
+}
+
+  
   
 
 
