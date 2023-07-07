@@ -73,9 +73,6 @@ a{
     margin-top: 7px;
     border: 1px solid white;
 }
-/* @media(max-width:320px){
-
-} */
 
 
 @media(max-width:743px){
@@ -196,24 +193,53 @@ a{
     line-height: 37px;
     color: #E9E9E9
 }
-.link-button{
-    padding: 9px 27px 9px 30px;
-    font-weight: 400;
+.link-button  { 
     font-size: 18px;
-    line-height: 28px;
-    background-color: #28A745;
-    color: #fff;
-    border-radius: 5px;
-}
-.link-button::before{
-    content: ">";
-    padding-right: 5px;
-    font-weight: 400;
-}
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.7em 2em;
+    border: 3px solid #28A745;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color:white; 
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+  } 
+  
+  .link-button:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color:  #28A745;
+    z-index: -1;
+  }
+  
+  button:hover, button:focus {
+    color: white;
+  }
+  
+  .link-button:hover:before, .link-button:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+  
+  .link-button:active {
+    transform: scale(0.9);
+  }
 
-.link-button:hover{
-    background-color: #15742b;
-}
+
 .tawers{
     padding-bottom: 19px;
     padding-top: 40px;
@@ -306,33 +332,59 @@ a{
     height: 100%;
 }
 .green-button{
-       padding: 12px 27px 12px 42px;
-       border: 1px solid white;
-       border-radius: 5px;
-       background-color: transparent;
-       font-weight: 400;
-       font-size: 18px;
-       line-height: 28px;
-       color: #fff;
-       margin-bottom: 30px;
-}
-.green-button-two{
-    padding: 12px 27px 12px 42px;
-    border: 1px solid white;
-    border-radius: 5px;
-    background-color: transparent;
-    font-weight: 400;
     font-size: 18px;
-    line-height: 28px;
-    color: #fff;
-    margin-bottom: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 12px 27px 12px 42px;
+    background-color: #28A745;
+    border: 3px solid  #044311;
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+  }
+  
+  .green-button:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #044311;
+    z-index: -1;
+  }
+  
+  .green-button:hover, button:focus {
+    color: white;
+  }
+  
+  .green-button:hover:before, button:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+  }
+  
+  .green-button:active {
+    transform: scale(0.9);
+  }
+.two{
+    background-color:  #0284D0;
 }
-.green-button-two:hover{
-    background-color: #0368a2;
+.two::before{
+    background-color: #034063;
 }
-.green-button:hover{
-    background-color: #157e2e;
-}
+
 
 .two-title-text{
     text-align: center;
