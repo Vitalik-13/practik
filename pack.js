@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $(".burger").click(function () {
+    $(".burger span").click(function () {
         $(".navigation").toggleClass("active");
     });
 });
