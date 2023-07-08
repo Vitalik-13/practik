@@ -73,6 +73,20 @@ function scrollToSection(e) {
   });
 }
 
+
+
+// Відключення браузерних налаштувань у посилань, що в footer
+
+let manyLink = document.querySelector('.text-on-foto-footer')
+console.log(manyLink)
+
+
+
+manyLink.addEventListener("click",(e)=>{
+    if(e.target.closest(".link-foto")){
+       e.preventDefault()
+    }
+})
   
   
 
