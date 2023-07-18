@@ -26,10 +26,10 @@ setInterval(rotateElement,2000)
 
 
 function removeRotate(){
-    green.forEach((item) =>{
-        if(item.classList.contains('green-foto-two')){
-            item.classList.remove("green-foto-two")
-        }});
+    green.forEach((item)=>item.classList.toggle('green-foto-two')) 
+        // if(item.classList.contains('green-foto-two')){
+        //     item.classList.remove("green-foto-two")
+        // }});
 }
 
 setInterval(removeRotate,2100)
